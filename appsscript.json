@@ -1,0 +1,47 @@
+{
+  "timeZone": "Pacific/Midway",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "{{ Library_ID }}",
+        "version": "38"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/spreadsheets"
+  ],
+  "urlFetchWhitelist": [
+    "https://api.xero.com/connections",
+    "https://api.xero.com/api.xro/2.0/Organisations",
+    "https://api.xero.com/api.xro/2.0/BankTransactions",
+    "https://api.xero.com/api.xro/2.0/Invoices",
+    "https://api.xero.com/api.xro/2.0/PurchaseOrders",
+    "https://api.xero.com/api.xro/2.0/Reports/ProfitAndLoss",
+    "https://api.xero.com/api.xro/2.0/Items",
+    "https://api.xero.com/api.xro/2.0/BankTransfers"
+  ],
+  "dataStudio": {
+    "name": "Xero Accounting",
+    "logoUrl": "{{ Company_Logo }}",  
+    "company": "{{ Company_Name }}", 
+    "companyUrl": "{{ Company_URL }}",
+    "addonUrl": "{{ Company_Addon_URL }}",
+    "supportUrl": "{{ Company_Support_URL }}",
+    "description": "{{ Description }}",
+    "shortDescription": "{{ Short_Description }}",
+    "privacyPolicyUrl": "{{ Policy_URL_Link }}",
+    "termsOfServiceUrl": "{{ Terms_of_Service }}",
+    "authType": ["OAUTH2"],
+    "feeType": ["PAID"],
+    "sources": ["XERO"],
+    "templates": {
+      "default": "5afd2e7b-36bf-4018-8198-19059b1940d4"
+    }
+  }
+}
